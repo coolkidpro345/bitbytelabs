@@ -24,11 +24,12 @@ app.get(['/', '/index.html'], (req, res) => {
   res.sendFile(path.join(__dirname, '../public/index.html'));
 });
 
-// Serve login and signup pages
-app.get('/login.html', (req, res) => {
+
+// Serve login and signup pages (with and without .html)
+app.get(['/login', '/login.html'], (req, res) => {
   res.sendFile(path.join(__dirname, '../public/login.html'));
 });
-app.get('/signup.html', (req, res) => {
+app.get(['/signup', '/signup.html'], (req, res) => {
   res.sendFile(path.join(__dirname, '../public/signup.html'));
 });
 

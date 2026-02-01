@@ -3,52 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BitByteLabs - Innovative Tech Solutions</title>
+  <title>BitByteLabs</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>BitByteLabs</h1>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+  <header class="header">
+    <div class="container header-flex">
+      <a href="/" class="logo" aria-label="BitByteLabs Home">
+        <svg height="32" viewBox="0 0 16 16" width="32" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="#24292f"/><text x="8" y="12" text-anchor="middle" font-size="10" fill="#fff" font-family="Arial, sans-serif">BBL</text></svg>
+      </a>
+      <nav class="nav">
+        <a href="/features">Features</a>
+        <a href="/pricing">Pricing</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a href="/login" class="btn btn-signin">Sign in</a>
+        <a href="/signup" class="btn btn-primary">Sign up</a>
+      </div>
+    </div>
   </header>
-  <main>
-    <section id="home">
-      <h2>Welcome to BitByteLabs</h2>
-      <p>Your partner in innovative technology solutions.</p>
+  <main class="main">
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero-title">Where Innovation Meets Code</h1>
+        <p class="hero-desc">Build, collaborate, and deploy with BitByteLabs. The home for modern software teams.</p>
+        <a href="/signup" class="btn btn-primary btn-hero">Get started for free</a>
+      </div>
     </section>
-    <section id="about">
-      <h2>About Us</h2>
-      <p>BitByteLabs is a leading provider of custom software, cloud, and AI solutions for businesses worldwide.</p>
-    </section>
-    <section id="services">
-      <h2>Our Services</h2>
-      <ul>
-        <li>Custom Software Development</li>
-        <li>Cloud Infrastructure</li>
-        <li>AI & Machine Learning</li>
-        <li>Consulting</li>
-      </ul>
-    </section>
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <form id="contactForm">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send</button>
-      </form>
-      <div id="formMessage"></div>
+    <section class="features">
+      <div class="container features-flex">
+        <div class="feature">
+          <h2>Collaboration</h2>
+          <p>Work together in real time with your team, no matter where you are.</p>
+        </div>
+        <div class="feature">
+          <h2>Security</h2>
+          <p>Enterprise-grade security and privacy for your code and data.</p>
+        </div>
+        <div class="feature">
+          <h2>Integrations</h2>
+          <p>Connect with your favorite tools and services for a seamless workflow.</p>
+        </div>
+      </div>
     </section>
   </main>
-  <footer>
-    <p>&copy; 2026 BitByteLabs. All rights reserved.</p>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 BitByteLabs. Inspired by GitHub. All rights reserved.</p>
+    </div>
   </footer>
   <script src="main.js"></script>
 </body>
