@@ -185,3 +185,155 @@ footer {
 .auth-switch a:hover {
   text-decoration: underline;
 }
+/* BitByteLabs - Inspired by GitHub.com */
+:root {
+  --color-bg: #f6f8fa;
+  --color-header: #fff;
+  --color-border: #d0d7de;
+  --color-text: #24292f;
+  --color-primary: #0969da;
+  --color-primary-hover: #1f6feb;
+  --color-btn: #fff;
+  --color-btn-primary: #2da44e;
+  --color-btn-primary-hover: #218838;
+  --color-footer: #fff;
+  --color-footer-text: #57606a;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  min-height: 100vh;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+.header {
+  background: var(--color-header);
+  border-bottom: 1px solid var(--color-border);
+  padding: 1.2rem 0 1.2rem 0;
+}
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.nav {
+  display: flex;
+  gap: 2rem;
+}
+.nav a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.05rem;
+  transition: color 0.2s;
+}
+.nav a:hover {
+  color: var(--color-primary);
+}
+.header-actions {
+  display: flex;
+  gap: 1rem;
+}
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  border: 1px solid var(--color-border);
+  background: var(--color-btn);
+  color: var(--color-text);
+  transition: background 0.2s, color 0.2s, border 0.2s;
+  cursor: pointer;
+}
+.btn-signin {
+  background: var(--color-btn);
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+}
+.btn-signin:hover {
+  background: #eaeef2;
+  color: var(--color-primary-hover);
+}
+.btn-primary {
+  background: var(--color-btn-primary);
+  color: #fff;
+  border: 1px solid var(--color-btn-primary);
+}
+.btn-primary:hover {
+  background: var(--color-btn-primary-hover);
+  border: 1px solid var(--color-btn-primary-hover);
+}
+.main {
+  padding-top: 2.5rem;
+}
+.hero {
+  background: #fff;
+  padding: 3rem 0 2.5rem 0;
+  border-bottom: 1px solid var(--color-border);
+  text-align: center;
+}
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.hero-desc {
+  font-size: 1.25rem;
+  color: #57606a;
+  margin-bottom: 2rem;
+}
+.btn-hero {
+  font-size: 1.15rem;
+  padding: 0.7rem 2.2rem;
+}
+.features {
+  background: var(--color-bg);
+  padding: 3rem 0;
+}
+.features-flex {
+  display: flex;
+  gap: 2.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.feature {
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(27,31,35,0.04);
+  padding: 2rem 1.5rem;
+  max-width: 320px;
+  flex: 1 1 260px;
+  text-align: left;
+}
+.feature h2 {
+  font-size: 1.2rem;
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+.feature p {
+  color: #57606a;
+  font-size: 1.05rem;
+}
+.footer {
+  background: var(--color-footer);
+  color: var(--color-footer-text);
+  text-align: center;
+  padding: 2rem 0 1.5rem 0;
+  border-top: 1px solid var(--color-border);
+  font-size: 1rem;
+  margin-top: 2rem;
+}
