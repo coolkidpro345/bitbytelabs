@@ -1,0 +1,30 @@
+# Node modules
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+jspm_packages/
+
+# Build output
+/dist
+/build
+
+# Docker
+*.tar
+*.img
+.dockerignore
+
+# Misc
+.env
+*.local
+
+# VSCode
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
