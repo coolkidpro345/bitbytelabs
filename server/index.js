@@ -1,9 +1,18 @@
 const express = require('express');
 const path = require('path');
+const RateLimit = require('express-rate-limit');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+// set up rate limiter: limit each IP to 100 requests per 15 minutes
+const limiter = RateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 100, // limit each IP to 100 requests per windowMs
+});
+
+// apply rate limiter to all requests
+app.use(limiter);
 
 // Simulate all servers down with env var or route
 const isDown = process.env.ALL_SERVERS_DOWN === '1';
